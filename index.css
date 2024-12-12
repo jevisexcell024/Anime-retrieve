@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Reenie+Beanie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Reenie+Beanie&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.intro-container {
+  min-height: 109vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.512),
+      rgba(0, 0, 0, 0.904),
+      hsl(0, 0%, 0%)
+    ),
+    url(/image/colossal-titan-aot-desktop-wallpaper-4k.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: loop 13s infinite ease-in-out;
+}
+@keyframes loop {
+  0% {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.512),
+        rgba(0, 0, 0, 0.698),
+        rgb(0, 0, 0)
+      ),
+      url(/image/zenitsu-demon-slayer-sword-scene-desktop-wallpaper-4k.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  25% {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.512),
+        rgba(0, 0, 0, 0.698),
+        rgb(0, 0, 0)
+      ),
+      url(/image/fushiguro-megumi-jujutsu-kaisen-red-rage-desktop-wallpaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  50% {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.512),
+        rgba(0, 0, 0, 0.698),
+        rgb(0, 0, 0)
+      ),
+      url(/image/demon-slayer-zenitsu-sunflowers-desktop-wallpaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  77% {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.512),
+        rgba(0, 0, 0, 0.698),
+        rgb(0, 0, 0)
+      ),
+      url(/image/levi-ackerman-3dmg-gear-sunset-battle-desktop-wallpaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  100% {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.512),
+        rgba(0, 0, 0, 0.698),
+        rgb(0, 0, 0)
+      ),
+      url(/image/saitama-one-punch-man-heroic-stance-desktop-wallpaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 68px;
+  width: 100%;
+  z-index: 4;
+  padding: 0 200px;
+  position: fixed;
+}
+.hamburger {
+  display: none;
+}
+.logo a {
+  font-size: 25px;
+  font-weight: 700;
+  color: #ffffff;
+}
+nav ul {
+  display: flex;
+}
+header.sticky {
+  transition: 0.9s ease-in-out;
+  padding: 0 100px;
+  z-index: 3;
+  background: #ffffff0d;
+  backdrop-filter: blur(7px);
+  box-shadow: 0px 2px 5px 2px rgb(0, 0, 0);
+}
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  margin: 0 5px;
+  color: #ffffff;
+  transition: 0.2s;
+}
+.btn button {
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.555);
+  border: none;
+  transition: 0.5s;
+  outline: none;
+  margin-right: -50px;
+}
+.btn button:hover {
+  background: rgba(192, 198, 199, 0.685);
+  transform: scale(1.1);
+}
+.navbar ul li a::after {
+  display: block;
+  content: "";
+  border-bottom: 1px solid #ffe204;
+  transform: scale(0);
+  transition: transform 250ms ease-in-out;
+}
+.navbar ul li a:hover::after {
+  transform: scale(1);
+}
+
+/* form container starts here ...  */
+form {
+  padding: 129px 400px;
+}
+.form-container {
+  height: 600px;
+  width: 1000px;
+  box-shadow: 0px 2px 5px 2px rgb(182, 178, 178);
+  background: rgba(255, 255, 255, 0.506);
+}
+.inner-container {
+  display: inline-flex;
+}
+.img {
+  background: red;
+  height: 600px;
+  width: 500px;
+}
+.inner-container-info {
+  padding: 40px 50px;
+}
+.inner-container-info input {
+  display: block;
+  margin: 20px auto;
+}
+input {
+  height: 50px;
+  width: 360px;
+  box-shadow: 0px 2px 5px 2px rgb(182, 178, 178);
+  outline: none;
+  text-indent: 10px;
+  /* margin: 90px 0; */
+  border: none;
+}
+textarea {
+  height: 170px;
+  width: 360px;
+  box-shadow: 0px 2px 5px 2px rgb(182, 178, 178);
+  outline: none;
+  text-indent: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: none;
+}
+.button {
+  position: relative;
+  left: 270px;
+  top: 90px;
+}
+.button button {
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.506);
+  box-shadow: 0px 2px 5px 2px rgb(182, 178, 178);
+  border: none;
+  transition: 0.5s;
+  outline: none;
+}
+.button button:hover {
+  background: rgba(192, 198, 199, 0.685);
+  transform: scale(1.1);
+}
+/* form ends here    */
+
+/* second section start  */
+.full-width {
+  min-height: 100vh;
+  background: hsl(0, 0%, 0%);
+}
+.cards {
+  height: 240px;
+  width: 470px;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.512),
+      rgba(0, 0, 0, 0.59),
+      hsla(0, 0%, 0%, 0.526)
+    ),
+    url(/image/mha-froppy-nice-desktop-wallpaper-4k.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 20px 10px;
+  border-radius: 10px;
+  transition: 0.7s;
+  cursor: pointer;
+}
+.cards:hover {
+  transform: scale(1.1);
+}
+.card-container {
+  display: flex;
+}
+.trending {
+  margin-left: 30px;
+  color: #fff;
+  font-size: 40px;
+  font-family: "Reenie Beanie", cursive;
+  font-weight: 400;
+}
+.left-content {
+  color: rgb(255, 255, 255);
+  padding: 174px 10px;
+}
+.left-content p {
+  margin-top: 5px;
+}
+.second-section {
+  padding-top: 100px;
+}
+.full-width-container {
+  min-width: 1200px;
+  margin: 0 auto;
+}
+/* .up{
+  margin-top: -10px;
+} */
+/* .complicated{
+display: none;
+} */
+.flex-conatiner {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.see {
+  color: #fff;
+  font-size: 17px;
+  transition: 0.5s;
+}
+.see:hover {
+  color: #ffe204;
+}
+.seen {
+  display: none;
+}
+i {
+  font-size: 17px;
+  margin-left: 10px;
+}
+.main-two-container {
+  min-height: 50vh;
+  background: rgb(12, 12, 12);
+}
+.main-card-container {
+  position: relative;
+  top: 40px;
+  height: 500px;
+  width: 100%;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.512),
+      rgba(0, 0, 0, 0.59),
+      hsla(0, 0%, 0%, 0.526)
+    ),
+    url(/image/tanjiro-nezuko-autumn-forest-romantic-ultrawide-wallpaper-4k.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.info {
+  padding: 170px 80px;
+}
+.info h1 {
+  font-size: 40px;
+  color: #fff;
+}
+.info p {
+  font-size: 17px;
+  color: #fff;
+  width: 500px;
+  font-family: serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 10px;
+}
+.btns {
+  margin-top: 13px;
+}
+.btns button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  transition: 0.5s;
+  height: 40px;
+  width: 120px;
+}
+.btnss {
+  background: #ffe204;
+}
+.btnss:hover {
+  background: #fff;
+  color: black;
+}
+.watch:hover {
+  background: #ffe204;
+  color: #000000;
+}
+.anime-genre {
+  min-height: 50vh;
+  background: #000000;
+}
+.list-anime-genre {
+  height: 100px;
+  width: 380px;
+  background: red;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.list-anime-genre:hover {
+  transform: scale(1.1);
+}
+.anime-genre-container {
+  position: relative;
+  top: 170px;
+  display: grid;
+  gap: 10px;
+}
+.anime-genre-inro {
+  display: flex;
+  gap: 10px;
+  /* padding: 0 80px; */
+}
+.list-anime-genre p {
+  text-align: center;
+  margin-top: 30px;
+  color: #fff;
+  font-size: 40px;
+  font-family: "Reenie Beanie", cursive;
+  font-weight: 400;
+}

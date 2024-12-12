@@ -1,0 +1,270 @@
+@media (max-width:485px) {
+    .hamburger{
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        right: 17px;
+    }
+.logo{
+    position: fixed;
+    left: 0;
+    margin-left: 20px;
+}
+.intro-container{
+    min-height: 140vh;
+    background:url(/image/colossal-titan-aot-desktop-wallpaper-4k.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+.hamburger .line{
+    width: 20px;
+    height: 2px;
+    background: #ffffff;
+    margin: 3px 0;
+}
+.navbar{
+    width: 0;
+    height: 900px;
+    position: absolute;
+    top: 67px;
+    left: 0;
+    right:0;
+    background-color: #e2dfdf08;
+    backdrop-filter: blur(6px);
+    overflow: hidden;
+    transition: .5s;
+}
+.navbar.active{
+    width: 390px;
+}
+.navbar ul{
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    opacity: 0;
+    transition: .5s;
+}
+.navbar.active ul{
+    opacity: 1;
+}
+.navbar ul li a{
+    margin-bottom: 12px;
+}
+.inner-container{
+    display: grid;
+}
+.tr{
+    max-width: 100%;
+    overflow-y: hidden;
+}
+.full-width-contianer::-webkit-scrollbar{
+    display: none;
+}
+.left-content{
+    color: rgb(255, 255, 255);
+    padding: 150px 10px;
+    font-size: 10px;
+  }
+  .trending{
+    margin-left: 30px;
+  color: #fff;
+  font-size: 20px;
+  }
+  .cards{
+    height: 200px;
+    width: 180px;
+  }
+  .second-section{
+    padding-top: 40px;
+  }
+.second-tri{
+    max-width: 100%;
+    overflow-y: hidden;
+}
+.complicated{
+    max-width: 100%;
+    overflow-y: hidden; 
+}
+.up{
+    margin-top: -20px;
+}
+.info{
+    padding: 100px 15px;
+  }
+  .info p{
+    font-size: 15px;
+  color: #fff;
+  width: 340px; 
+  text-wrap: wrap;
+  }
+  .main-two-container{
+    min-height: 30vh;
+    background: rgb(12, 12, 12);
+  }
+  .main-card-container{
+    height: 400px;
+  }
+  .anime-genre-inro{
+    display: grid;
+    gap: 15px;
+    padding: 0 17px;
+  }
+  .list-anime-genre{
+    height: 100px;
+    width: 330px;
+  }
+  .anime-genre-container{
+    position: relative;
+    top:70px;
+}
+.anime-genre{
+    min-height: 140vh;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
